@@ -191,7 +191,6 @@ color: var(--primary-text-color-theme-light);
     color: var(--primary-text-color-theme-light);
 }
 .type-case{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -212,7 +211,7 @@ color: var(--primary-text-color-theme-light);
     background:var(--backgound-color);
 }
 .footer-logo{
-        background: var(--backgound-color);
+    background: var(--backgound-color);
 }
 .contact-list:hover,
 .contact-list:focus{
