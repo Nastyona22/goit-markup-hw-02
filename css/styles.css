@@ -1,0 +1,221 @@
+:root {
+    --primary-font-family: 'Roboto', sans-serif;
+    --logo-font-family: 'Raleway', sans-serif;
+    --primary-text-color-theme-dark: #FFFFFF;
+    --primary-text-color-theme-light: #212121;
+    --secondary-text-color-theme-light: #757575;
+    --accent-color: #2196F3;
+    --backgound-color: #2F303A;
+}
+/* backgound-color додано для зручності перегляду*/
+
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+body {
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color-theme-light);
+}
+
+/*---------------- COMPONENTS----------------- */
+
+
+
+.cursor-view {
+    cursor: pointer;
+}
+
+.logo-text-first-part{
+    font-family: var(--logo-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.logo-second-part-white-theme{
+    color: var(--primary-text-color-theme-light)
+}
+.logo-second-part-dark-theme {
+    color: var(--primary-text-color-theme-dark);
+}
+.section-description{
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-text-color-theme-light);
+}
+
+
+/*---------------- /COMPONENTS----------------- */
+
+
+
+/* --------HEADER------------- */
+.menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light);
+
+}
+.menu-link:hover,
+.menu-link:focus{
+    color: var(--accent-color);
+}
+.contact-mail-header{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-theme-light);
+}
+
+.contact-mail-header:hover,
+.contact-mail-header:focus{
+    color: var(--accent-color);
+}
+.contact-phone-header{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--secondary-text-color-theme-light);
+}
+.contact-phone-header:hover,
+.contact-phone-header:focus{
+    color: var(--accent-color);
+}
+
+
+/* --------/HEADER------------- */
+
+/* --------------HERO---------------*/
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-text-color-theme-dark);
+    background: var(--backgound-color);}
+
+.modal-btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: var(--primary-text-color-theme-dark);
+    background: var(--accent-color);
+  
+}
+
+
+/* --------------/HERO---------------*/
+
+/*------------- ADVANTAGES------------- */
+.advantages-title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.advantages-description{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-theme-light);
+}
+
+/*------------- /ADVANTAGES------------- */
+
+/*------------------ OUR TEAM---------------- */
+.employees-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.employees-position{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-theme-light);
+}
+
+/*------------------ /OUR TEAM---------------- */
+
+/*-------------------- PORTFOLIO---------------------- */
+.active-page-menu{
+    color: var(--accent-color);
+}
+
+.type-project-menu{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-text-color-theme-light);
+    background: #F5F4FA;
+}
+
+.type-project-menu:hover,
+.type-project-menu:focus{
+    color: var(--primary-text-color-theme-dark);
+    background: var(--accent-color);
+  
+}
+.case{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color-theme-light);
+}
+.type-case{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    
+    color: var(--secondary-text-color-theme-light);
+}
+
+/*-------------------- /PORTFOLIO---------------------- */
+
+/*------------FOOTER-------------*/
+.contact-list{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-dark);
+    background:var(--backgound-color);
+}
+.footer-logo{
+        background: var(--backgound-color);
+}
+.contact-list:hover,
+.contact-list:focus{
+    color: var(--accent-color);
+}
+/*------------/FOOTER-------------*/
