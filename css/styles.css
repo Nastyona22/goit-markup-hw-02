@@ -2,6 +2,7 @@
     --primary-font-family: 'Roboto', sans-serif;
     --logo-font-family: 'Raleway', sans-serif;
     --primary-text-color-theme-dark: #FFFFFF;
+    --secondary-text-color-theme-dark: rgba(255, 255, 255, 0.6);
     --primary-text-color-theme-light: #212121;
     --secondary-text-color-theme-light: #757575;
     --accent-color: #2196F3;
@@ -21,6 +22,12 @@
 body {
     font-family: var(--primary-font-family);
     color: var(--primary-text-color-theme-light);
+}
+
+.visually-hidden{
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
 }
 
 /*---------------- COMPONENTS----------------- */
@@ -165,6 +172,15 @@ color: var(--primary-text-color-theme-light);
 .active-page-menu{
     color: var(--accent-color);
 }
+.selected-menu{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-dark);
+    background: var(--accent-color);
+}
 
 .type-project-menu{
     font-weight: 500;
@@ -207,7 +223,7 @@ color: var(--primary-text-color-theme-light);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color-theme-dark);
+    color: var(--secondary-text-color-theme-dark);
     background:var(--backgound-color);
 }
 .footer-logo{
@@ -216,5 +232,8 @@ color: var(--primary-text-color-theme-light);
 .contact-list:hover,
 .contact-list:focus{
     color: var(--accent-color);
+}
+.address-footer{
+    color: var(--primary-text-color-theme-dark);
 }
 /*------------/FOOTER-------------*/
