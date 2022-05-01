@@ -13,6 +13,7 @@
 
 .link {
     text-decoration: none;
+    color: inherit;
 }
 
 .list {
@@ -21,13 +22,21 @@
 
 body {
     font-family: var(--primary-font-family);
-    color: var(--primary-text-color-theme-light);
+    color: var(--secondary-text-color-theme-light);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
-.visually-hidden{
-    visibility: hidden;
-    pointer-events: none;
+.visually-hidden {
     position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
 
 /*---------------- COMPONENTS----------------- */
@@ -38,26 +47,24 @@ body {
     cursor: pointer;
 }
 
-.logo-text-first-part{
+.logo{
     font-family: var(--logo-font-family);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--accent-color);
 }
-.logo-second-part-white-theme{
+.logo-dark{
     color: var(--primary-text-color-theme-light)
 }
-.logo-second-part-dark-theme {
+.logo-white{
     color: var(--primary-text-color-theme-dark);
 }
-.section-description{
+.section-title{
 font-weight: 700;
 font-size: 36px;
 line-height: 42px;
 text-align: center;
-letter-spacing: 0.03em;
 color: var(--primary-text-color-theme-light);
 }
 
@@ -72,37 +79,16 @@ color: var(--primary-text-color-theme-light);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color-theme-light);
 
+}
+.nav-list{
+    color: var(--primary-text-color-theme-light);
 }
 .menu-link:hover,
-.menu-link:focus{
+.menu-link:focus,
+.active-page-menu{
     color: var(--accent-color);
 }
-.contact-mail-header{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color-theme-light);
-}
-
-.contact-mail-header:hover,
-.contact-mail-header:focus{
-    color: var(--accent-color);
-}
-.contact-phone-header{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color:var(--secondary-text-color-theme-light);
-}
-.contact-phone-header:hover,
-.contact-phone-header:focus{
-    color: var(--accent-color);
-}
-
 
 /* --------/HEADER------------- */
 
@@ -115,9 +101,12 @@ color: var(--primary-text-color-theme-light);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-text-color-theme-dark);
-    background: var(--backgound-color);}
-
+}
+.section-hero{
+    background-color: var(--backgound-color);
+}
 .modal-btn{
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -138,51 +127,34 @@ color: var(--primary-text-color-theme-light);
 .advantages-title{
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--primary-text-color-theme-light);
 }
-.advantages-description{
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color-theme-light);
-}
+
 
 /*------------- /ADVANTAGES------------- */
 
 /*------------------ OUR TEAM---------------- */
+.employees-list{
+text-align: center;
+}
 .employees-name{
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-light);
 }
-.employees-position{
+.employees-position,
+.employees-name{
     font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color-theme-light);
+    line-height: 1.19;
 }
 
 /*------------------ /OUR TEAM---------------- */
 
 /*-------------------- PORTFOLIO---------------------- */
-.active-page-menu{
-    color: var(--accent-color);
-}
-.selected-menu{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color-theme-dark);
-    background: var(--accent-color);
-}
+
 
 .type-project-menu{
+    font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -194,7 +166,9 @@ color: var(--primary-text-color-theme-light);
 }
 
 .type-project-menu:hover,
-.type-project-menu:focus{
+.type-project-menu:focus,
+.selected-menu{
+    font-family: var(--primary-font-family);
     color: var(--primary-text-color-theme-dark);
     background: var(--accent-color);
   
@@ -209,7 +183,6 @@ color: var(--primary-text-color-theme-light);
 .type-case{
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
     
     color: var(--secondary-text-color-theme-light);
 }
@@ -217,23 +190,22 @@ color: var(--primary-text-color-theme-light);
 /*-------------------- /PORTFOLIO---------------------- */
 
 /*------------FOOTER-------------*/
-.contact-list{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color-theme-dark);
-    background:var(--backgound-color);
+.footer{
+    background-color: var(--backgound-color);
 }
-.footer-logo{
-    background: var(--backgound-color);
+address{
+    font-style: inherit;
 }
-.contact-list:hover,
-.contact-list:focus{
+
+.contact-link{
+   color: var(--secondary-text-color-theme-dark);
+}
+
+.contact-link[target="_blank"]{
+color: var(--primary-text-color-theme-dark);
+}
+.contact-link:hover,
+.contact-link:focus{
     color: var(--accent-color);
-}
-.address-footer{
-    color: var(--primary-text-color-theme-dark);
 }
 /*------------/FOOTER-------------*/
