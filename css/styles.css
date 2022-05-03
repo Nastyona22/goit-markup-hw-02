@@ -8,7 +8,6 @@
     --accent-color: #2196F3;
     --backgound-color: #2F303A;
 }
-/* backgound-color додано для зручності перегляду*/
 
 
 .link {
@@ -104,6 +103,7 @@ color: var(--primary-text-color-theme-light);
 }
 .section-hero{
     background-color: var(--backgound-color);
+    
 }
 .modal-btn{
     font-family: inherit;
@@ -116,7 +116,7 @@ color: var(--primary-text-color-theme-light);
     letter-spacing: 0.06em;
     
     color: var(--primary-text-color-theme-dark);
-    background: var(--accent-color);
+    background-color: var(--accent-color);
   
 }
 
@@ -157,12 +157,12 @@ text-align: center;
     font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     
     color: var(--primary-text-color-theme-light);
-    background: #F5F4FA;
+    background-color: #F5F4FA;
 }
 
 .type-project-menu:hover,
@@ -170,7 +170,7 @@ text-align: center;
 .selected-menu{
     font-family: var(--primary-font-family);
     color: var(--primary-text-color-theme-dark);
-    background: var(--accent-color);
+    background-color: var(--accent-color);
   
 }
 .case{
